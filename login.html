@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login - Our Home GBI Arcadia</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo-container">
+      <img src="assets/Logo Our Home.png" alt="Logo Our Home" class="logo" />
+      <span class="logo-text">Our Home, GBI Arcadia</span>
+    </div>
+
+    <button class="menu-toggle" id="menuToggle" aria-label="Buka menu">☰</button>
+
+    <nav class="nav-links" id="navLinks">
+      <a href="index.html">Beranda</a>
+      <a href="media.html">Media</a>
+      <a href="kegiatan.html">Kegiatan</a>
+      <a href="quiz.html" id="quizLink">Quiz</a>
+      <a href="iman.html">Iman & Pengajaran</a>
+      <a href="pelayanan.html">Komunitas & Pelayanan</a>
+      <a href="login.html" id="loginLink" class="active">Login</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div>
+        <p class="eyebrow">Login Jemaat</p>
+        <h1>MASUK MENGGUNAKAN NO KKJ MU!</h1>
+        <p class="lead">Login untuk akses semua menu.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="login-card">
+        <div class="login-avatar">
+          <img src="assets/Logo Our Home.png" alt="User" />
+        </div>
+        <form id="loginForm" class="login-form">
+          <label for="noKkj">Login</label>
+          <input id="noKkj" name="noKkj" type="text" placeholder="Masukkan No KKJ" required />
+          <input id="password" name="password" type="password" placeholder="Masukkan Password" required />
+          <button type="submit" class="btn primary">Login</button>
+        </form>
+        <p id="loginStatus" class="login-status"></p>
+        <div id="loginInfo"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 GBI Arcadia - OurHome</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
